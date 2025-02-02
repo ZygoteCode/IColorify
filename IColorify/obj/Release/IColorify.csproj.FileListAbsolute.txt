@@ -14,3 +14,17 @@ C:\Users\bolog\Desktop\IColorify\IColorify\obj\Release\IColorify.csproj.CoreComp
 C:\Users\bolog\Desktop\IColorify\IColorify\obj\Release\IColorify.csproj.Up2Date
 C:\Users\bolog\Desktop\IColorify\IColorify\obj\Release\IColorify.exe
 C:\Users\bolog\Desktop\IColorify\IColorify\obj\Release\IColorify.pdb
+C:\Users\bolog\Desktop\Progetti\IColorify\IColorify\bin\Release\IColorify.exe.config
+C:\Users\bolog\Desktop\Progetti\IColorify\IColorify\bin\Release\IColorify.exe
+C:\Users\bolog\Desktop\Progetti\IColorify\IColorify\bin\Release\IColorify.pdb
+C:\Users\bolog\Desktop\Progetti\IColorify\IColorify\bin\Release\IColorifyLib.dll
+C:\Users\bolog\Desktop\Progetti\IColorify\IColorify\bin\Release\BouncyCastle.Cryptography.dll
+C:\Users\bolog\Desktop\Progetti\IColorify\IColorify\bin\Release\IColorifyLib.pdb
+C:\Users\bolog\Desktop\Progetti\IColorify\IColorify\bin\Release\BouncyCastle.Cryptography.xml
+C:\Users\bolog\Desktop\Progetti\IColorify\IColorify\obj\Release\IColorify.csproj.AssemblyReference.cache
+C:\Users\bolog\Desktop\Progetti\IColorify\IColorify\obj\Release\IColorify.MainForm.resources
+C:\Users\bolog\Desktop\Progetti\IColorify\IColorify\obj\Release\IColorify.csproj.GenerateResource.cache
+C:\Users\bolog\Desktop\Progetti\IColorify\IColorify\obj\Release\IColorify.csproj.CoreCompileInputs.cache
+C:\Users\bolog\Desktop\Progetti\IColorify\IColorify\obj\Release\IColorify.csproj.Up2Date
+C:\Users\bolog\Desktop\Progetti\IColorify\IColorify\obj\Release\IColorify.exe
+C:\Users\bolog\Desktop\Progetti\IColorify\IColorify\obj\Release\IColorify.pdb

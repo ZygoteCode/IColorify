@@ -15,7 +15,7 @@ namespace IColorify
     {
         private static string alphabet = "!#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁł";
 
-        public static Bitmap Encode(string inputString, string password, string phoneNumber)
+        public static Tuple<Bitmap, int> Encode(string inputString, string password, string phoneNumber)
         {
             try
             {
@@ -48,6 +48,7 @@ namespace IColorify
                 Bitmap bitmap = new Bitmap(512, 512);
                 int initialIndex = -1;
                 int totalLength = base256String.Length;
+                int alteredPixels = 0;
 
                 for (int i = 0; i < bitmap.Width; i++)
                 {
@@ -59,6 +60,7 @@ namespace IColorify
                             {
                                 bitmap.SetPixel(i, j, Color.FromArgb(90, 127, 32));
                                 initialIndex++;
+                                alteredPixels++;
                             }
                             else
                             {
@@ -70,28 +72,78 @@ namespace IColorify
                             if (initialIndex == totalLength)
                             {
                                 bitmap.SetPixel(i, j, Color.FromArgb(90, 127, 32));
+                                alteredPixels++;
                             }
                             else if (initialIndex == -1)
                             {
                                 bitmap.SetPixel(i, j, Color.FromArgb(210, 15, 44));
                                 initialIndex++;
+                                alteredPixels++;
                             }
                             else
                             {
                                 byte item = GetAlphabetIndex(base256String[initialIndex]);
                                 bitmap.SetPixel(i, j, Color.FromArgb(item, item, item));
                                 initialIndex++;
+                                alteredPixels++;
                             }
                         }
                     }
                 }
 
-                return bitmap;
+                return new Tuple<Bitmap, int>(bitmap, alteredPixels);
             }
             catch
             {
                 return null;
             }
+        }
+
+        public static int GetAlteredPixels(Bitmap bitmap)
+        {
+            if (bitmap.Width != 512 || bitmap.Height != 512)
+            {
+                return 0;
+            }
+
+            int alteredPixels = 0;
+            bool initial = true;
+
+            for (int i = 0; i < bitmap.Width; i++)
+            {
+                for (int j = 0; j < bitmap.Height; j++)
+                {
+                    Color pixel = bitmap.GetPixel(i, j);
+
+                    if (initial)
+                    {
+                        if (pixel.R != 210 || pixel.G != 15 || pixel.B != 44)
+                        {
+                            return 0;
+                        }
+
+                        initial = false;
+                        alteredPixels++;
+                    }
+                    else
+                    {
+                        if (pixel.R == 90 && pixel.G == 127 && pixel.B == 32)
+                        {
+                            alteredPixels++;
+                            goto finishAll;
+                        }
+
+                        if (pixel.R != pixel.G || pixel.R != pixel.B || pixel.G != pixel.B)
+                        {
+                            return 0;
+                        }
+
+                        alteredPixels++;
+                    }
+                }
+            }
+
+        finishAll: return alteredPixels;
         }
 
         public static string Decode(Bitmap bitmap, string password, string phoneNumber)

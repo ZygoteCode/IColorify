@@ -22,7 +22,7 @@ namespace IColorify
             while (true)
             {
                 Thread.Sleep(1);
-                label2.Text = guna2TextBox1.Text.Length.ToString();
+                label2.Text = $"{guna2TextBox1.Text.Length.ToString()} / 261870";
                 label3.Text = $"{_imageAlteredPixels} / 262144";
                 label5.Text = guna2TextBox3.Text.Length.ToString();
                 label7.Text = guna2TextBox2.Text.Length.ToString();
@@ -119,11 +119,14 @@ namespace IColorify
         private void LoadImage(Bitmap bitmap)
         {
             pictureBox1.BackgroundImage = bitmap;
+            _imageAlteredPixels = IColorifyCore.GetAlteredPixels(bitmap);
         }
 
         private void guna2GradientButton10_Click(object sender, EventArgs e)
         {
-            pictureBox1.BackgroundImage = IColorifyCore.Encode(guna2TextBox1.Text, guna2TextBox2.Text, guna2TextBox3.Text);
+            Tuple<Bitmap, int> encoded = IColorifyCore.Encode(guna2TextBox1.Text, guna2TextBox2.Text, guna2TextBox3.Text);
+            pictureBox1.BackgroundImage = encoded.Item1;
+            _imageAlteredPixels = encoded.Item2;
         }
 
         private void guna2GradientButton9_Click(object sender, EventArgs e)

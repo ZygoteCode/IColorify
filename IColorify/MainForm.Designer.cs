@@ -98,7 +98,7 @@
             this.guna2TextBox1.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.guna2TextBox1.Location = new System.Drawing.Point(552, 109);
-            this.guna2TextBox1.MaxLength = 2147483647;
+            this.guna2TextBox1.MaxLength = 261870;
             this.guna2TextBox1.Multiline = true;
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
@@ -294,12 +294,13 @@
             this.guna2TextBox2.Location = new System.Drawing.Point(552, 59);
             this.guna2TextBox2.MaxLength = 2147483647;
             this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
+            this.guna2TextBox2.PasswordChar = '●';
             this.guna2TextBox2.PlaceholderForeColor = System.Drawing.SystemColors.ControlDark;
             this.guna2TextBox2.PlaceholderText = "Insert your password here.";
             this.guna2TextBox2.SelectedText = "";
             this.guna2TextBox2.Size = new System.Drawing.Size(253, 36);
             this.guna2TextBox2.TabIndex = 12;
+            this.guna2TextBox2.UseSystemPasswordChar = true;
             // 
             // guna2TextBox3
             // 
@@ -342,7 +343,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(130, 18);
             this.label2.TabIndex = 15;
-            this.label2.Text = "0";
+            this.label2.Text = "0 / 261870";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label3
