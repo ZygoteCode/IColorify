@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\bolog\\Desktop\\Progetti\\IColorify\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{51607BE4-0BD8-4768-889A-D2C434854BE4}|IColorify\\IColorify.csproj|c:\\users\\bolog\\desktop\\progetti\\icolorify\\icolorify\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51607BE4-0BD8-4768-889A-D2C434854BE4}|IColorify\\IColorify.csproj|solutionrelative:icolorify\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51607BE4-0BD8-4768-889A-D2C434854BE4}|IColorify\\IColorify.csproj|c:\\users\\bolog\\desktop\\progetti\\icolorify\\icolorify\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{51607BE4-0BD8-4768-889A-D2C434854BE4}|IColorify\\IColorify.csproj|solutionrelative:icolorify\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAC88D8-0ECD-412F-967B-8E7511A832E5}|IColorifyLib\\IColorifyLib.csproj|c:\\users\\bolog\\desktop\\progetti\\icolorify\\icolorifylib\\icolorifycore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EAC88D8-0ECD-412F-967B-8E7511A832E5}|IColorifyLib\\IColorifyLib.csproj|solutionrelative:icolorifylib\\icolorifycore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IColorifyCore.cs",
+              "DocumentMoniker": "C:\\Users\\bolog\\Desktop\\Progetti\\IColorify\\IColorifyLib\\IColorifyCore.cs",
+              "RelativeDocumentMoniker": "IColorifyLib\\IColorifyCore.cs",
+              "ToolTip": "C:\\Users\\bolog\\Desktop\\Progetti\\IColorify\\IColorifyLib\\IColorifyCore.cs",
+              "RelativeToolTip": "IColorifyLib\\IColorifyCore.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAcwH0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T12:57:15.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\bolog\\Desktop\\Progetti\\IColorify\\IColorify\\MainForm.cs",
+              "RelativeDocumentMoniker": "IColorify\\MainForm.cs",
+              "ToolTip": "C:\\Users\\bolog\\Desktop\\Progetti\\IColorify\\IColorify\\MainForm.cs",
+              "RelativeToolTip": "IColorify\\MainForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T12:57:04.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainForm.cs [Progettazione]",
+              "DocumentMoniker": "C:\\Users\\bolog\\Desktop\\Progetti\\IColorify\\IColorify\\MainForm.cs",
+              "RelativeDocumentMoniker": "IColorify\\MainForm.cs",
+              "ToolTip": "C:\\Users\\bolog\\Desktop\\Progetti\\IColorify\\IColorify\\MainForm.cs [Progettazione]",
+              "RelativeToolTip": "IColorify\\MainForm.cs [Progettazione]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T12:56:59.893Z",
+              "EditorCaption": " [Progettazione]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
